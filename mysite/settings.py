@@ -26,7 +26,7 @@ SECRET_KEY = '***************************'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['a336-154-73-10-44.eu.ngrok.io',
+ALLOWED_HOSTS = ['a5aa-154-73-10-52.eu.ngrok.io',
                  '127.0.0.1',
                  'localhost',
                  ]
@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'home.apps.HomeConfig',
     'hello.apps.HelloConfig',
     'autos.apps.AutosConfig',
+    'cats.apps.CatsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -132,4 +133,4 @@ STATIC_URL = '/static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CSRF_TRUSTED_ORIGINS = ['https://a336-154-73-10-44.eu.ngrok.io', 'https://*.127.0.0.1']
+CSRF_TRUSTED_ORIGINS = ['https://a5aa-154-73-10-52.eu.ngrok.io', 'https://*.127.0.0.1']

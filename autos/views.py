@@ -21,7 +21,7 @@ class MakeView(LoginRequiredMixin, View):
     def get(self, request):
         ml = Make.objects.all()
         ctx = {'make_list': ml}
-        return render(request, 'autos/make_list.html', ctx)
+        return render(request, 'autos/make.html', ctx)
 
 
 class MakeCreate(LoginRequiredMixin, CreateView):
