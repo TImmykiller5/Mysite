@@ -1,16 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Home</title>
-</head>
-<body>
-Hello World
-<ul>
-<li><p><a href="/polls">A Polls Application</a></p></li>
-<li><p><a href="/hello">Test the session</a></p></li>
-    <li><p><a href="/autos">Autos Crud</a> </p></li>
-    <li><p><a href="/cats">Cats Crud</a> </p></li>
-</ul>
-</body>
-</html>
+{% extends "base_bootstrap.html" %}
+{% block content %}
+    <h1>Welcome to {{ settings.APP_NAME }}</h1>
+    <p>
+    Hello world.
+    </p>
+{% endblock content %}
