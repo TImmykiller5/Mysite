@@ -1,4 +1,7 @@
+import environ
 
+env = environ.Env()
+environ.Env.read_env()
 # Copy this file to github_settings.py (don't check it into github)
 
 # Go to https://github.com/settings/developers
@@ -17,8 +20,8 @@
 
 # Then copy the client_key and secret to this file
 
-SOCIAL_AUTH_GITHUB_KEY = 'd14d5908c70ef1d6d877'
-SOCIAL_AUTH_GITHUB_SECRET = 'a6d4b200f1b9e2b58da7a0c2a5111e6d8901cd71'
+SOCIAL_AUTH_GITHUB_KEY = env('GITHUB_KEY')
+SOCIAL_AUTH_GITHUB_SECRET = env('GITHUB_SECRET')
 
 # Ask for the user's email (don't edit this line)
 SOCIAL_AUTH_GITHUB_SCOPE = ['user:email']
@@ -36,5 +39,3 @@ SOCIAL_AUTH_GITHUB_SCOPE = ['user:email']
 # Homepage Url: http://localhost:8000
 # Application Description: Whatever
 # Authorization callback URL: http://127.0.0.1:8000/oauth/complete/github/
-
-
