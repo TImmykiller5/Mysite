@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'taggit',
     'home.apps.HomeConfig',  
     'ads.apps.AdsConfig',
+    'school.apps.SchoolConfig',
 
 
 ]
@@ -203,4 +204,4 @@ if (len(sys.argv) >= 2 and sys.argv[1] == 'runserver'):
         }
     }
 '''
-CSRF_TRUSTED_ORIGINS = ['https://44eb-154-73-10-63.eu.ngrok.io','https://*.127.0.0.1']
+CSRF_TRUSTED_ORIGINS = ['https://1262-154-73-10-63.eu.ngrok.io','https://*.127.0.0.1']
