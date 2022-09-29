@@ -20,8 +20,8 @@ environ.Env.read_env()
 
 # Then copy the client_key and secret to this file
 
-SOCIAL_AUTH_GITHUB_KEY = env('GITHUB_KEY')
-SOCIAL_AUTH_GITHUB_SECRET = env('GITHUB_SECRET')
+SOCIAL_AUTH_GITHUB_KEY = env('NGROK_GITHUB_KEY')
+SOCIAL_AUTH_GITHUB_SECRET = env('NGROK_GITHUB_SECRET')
 
 # Ask for the user's email (don't edit this line)
 SOCIAL_AUTH_GITHUB_SCOPE = ['user:email']

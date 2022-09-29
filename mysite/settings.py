@@ -11,7 +11,10 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+import environ
 
+env = environ.Env()
+environ.Env.read_env()
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -22,8 +25,7 @@ APP_NAME = 'TIMMYKILLER APP'   # Add
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'g$iqqu&*mw4_sg3(#ld0sqaalxebel&168^yj%i&sgrw(fmn@w'
-
+SECRET_KEY = env('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
@@ -204,4 +206,4 @@ if (len(sys.argv) >= 2 and sys.argv[1] == 'runserver'):
         }
     }
 '''
-CSRF_TRUSTED_ORIGINS = ['https://1262-154-73-10-63.eu.ngrok.io','https://*.127.0.0.1']
+CSRF_TRUSTED_ORIGINS = ['https://676c-154-73-10-63.eu.ngrok.io', 'https://*.127.0.0.1']
